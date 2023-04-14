@@ -12,11 +12,14 @@ const UseRefHook = () => {
   };
 
   return (
-    <div>
-      <h1>{name}</h1>
-      <input type="text" placeholder="Ex ..." ref={inputRef} />
-      <button onClick={onClick}>Change Name</button>
-    </div>
+    <>
+      <div>
+        <h1>{name}</h1>
+        <input type="text" placeholder="Ex ..." ref={inputRef} />
+        <button onClick={onClick}>Change Name</button>
+      </div>
+      <hr />
+    </>
   );
 };
 
